@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel - MovieFlix.TV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="admin-container">
+    <h1>Panel de Administración</h1>
+    <div id="loginDiv">
+      <input type="text" id="adminUser" placeholder="Usuario">
+      <input type="password" id="adminPass" placeholder="Contraseña">
+      <button onclick="login()">Entrar</button>
+    </div>
+
+    <div id="adminPanel" style="display:none;">
+      <h2>Lista de Videos</h2>
+      <ul id="videoList"></ul>
+      <h3>Agregar Video</h3>
+      <input type="text" id="videoTitle" placeholder="Título">
+      <input type="text" id="videoCategory" placeholder="Categoría (serie/pelicula/todas)">
+      <input type="text" id="videoThumbnail" placeholder="URL Miniatura">
+      <input type="text" id="videoLink" placeholder="URL Video MEGA">
+      <button onclick="addVideo()">Agregar Video</button>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
