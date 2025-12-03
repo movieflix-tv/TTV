@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MovieFlix.TV</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+<div class="brand">
+<span class="movie">MovieFlix</span><span class="tv">.TV</span>
+</div>
+<nav class="nav">
+<div class="dropdown">
+<button class="dropbtn" id="catBtn">Categorías ▾</button>
+<div class="dropdown-content" id="dropdownContent">
+<input id="searchCat" placeholder="Buscar..." />
+<a data-cat="serie" href="#">Series</a>
+<a data-cat="pelicula_del_ano" href="#">Película del año</a>
+<a data-cat="todas" href="#">Todas las películas</a>
+</div>
+</div>
+<input id="globalSearch" placeholder="Buscar título..." />
+<button id="loginBtn">Iniciar sesión</button>
+</nav>
+</header>
+
+
+<main>
+<section id="grid" class="grid"></section>
+</main>
+
+
+<div id="playerModal" class="modal">
+<div class="modal-content">
+<span class="close">×</span>
+<video id="player" controls width="100%"></video>
+</div>
+</div>
+
+
+<footer class="footer">MovieFlix.TV</footer>
+
+
+<script src="app.js"></script>
+</body>
+</html>
